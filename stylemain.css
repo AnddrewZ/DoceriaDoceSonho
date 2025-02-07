@@ -1,0 +1,1241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Remover Botão se Altura < 500px */
+@media (max-height:800px) {
+    .botaobanner {
+        display: none;
+    }
+}
+
+/* CSS MOBILE */
+
+@media (max-width: 480px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .navbarmobile {
+        background-color: #FFE8E1;
+        display: block;
+        height: 54px;
+        width: 100%;
+    }
+
+    .navbarmobileitem {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .sidebarmobile {
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidebar */
+        border-radius: 0 50px 50px 0;
+    }
+
+    .sidebarmobileitem:hover {
+        color: #FF5C8E;
+    }
+
+    .sidebarmobileitem {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        color: #6B717E;
+        font-size: 32px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .bannermobile {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .botaobanner {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+        height: 80px;
+        background-color: #FF5C8E;
+        border-radius: 25px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 75px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .botaobanner:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    .botaobanner:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .cardsnovidades {
+        justify-content: space-around;
+        display: grid;
+        gap: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .cardnovidades {
+        margin-top: 20px;
+        width: 160px;
+        height: 300px;
+        border-radius: 10px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        word-wrap: break-word;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+        overflow: hidden;
+    }
+
+    .imagemnovidades {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .linhanovidades {
+        width: 140px;
+        height: 5px;
+        color: #D81E5B;
+        background-color: #D81E5B;
+        margin: 0 auto;
+    }
+
+    .titulosessaonovidades {
+        font-size: 41.89px;
+        font-weight: 500;
+        text-align: center;
+        color: #D81E5B;
+        margin-top: 20px;
+    }
+
+    .titulocardsnovidades {
+        font-weight: 600;
+        font-size: 25.89px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .textocardsnovidades {
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .botaocardnovidades {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        height: 40px;
+        background-color: #FF5C8E;
+        border-radius: 10px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        width: 125px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .sessaonossosprodutos {
+        margin-top: 20px;
+        background-color: #ffffff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .titulonossosprodutos {
+        font-size: 41.89px;
+        color: #D81E5B;
+        font-weight: 500;
+    }
+
+    .itensnossosprodutos {
+        justify-content: space-around;
+        display: grid;
+        gap: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .seletornossosprodutos {
+        font-size: 25.89px;
+        text-decoration: none;
+        color: #6B717E;
+        font-weight: 500;
+    }
+
+    .titulocardsnossosprodutos {
+        font-weight: 500;
+        font-size: 25.89px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: #6B717E;
+    }
+
+    .textocardsnossosprodutos {
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: #6B717E;
+    }
+
+    #seletornossosprodutos1 {
+        color: #585858;
+        text-decoration: underline;
+    }
+
+    .cardsnossosprodutos1 {
+        display: block;
+    }
+
+    .cardsnossosprodutos2 {
+        display: none;
+    }
+
+    .cardsnossosprodutos3 {
+        display: none;
+    }
+
+    .cardsnossosprodutos4 {
+        display: none;
+    }
+
+    .sessaomaisinformacoes {
+        background-color: #FFE8E1;
+        margin-top: 30px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .titulomaisinformacoes {
+        font-size: 25.89px;
+        color: black;
+        font-weight: 500;
+    }
+
+    .textomaisinformacoes {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 450;
+    }
+
+    iframe {
+        width: 310px;
+        height: 180px;
+        border: solid #D81E5B 3px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .rodape {
+        background-color: #FF5C8E;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .departamentosrodape {
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .titulorodape {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 25.89px;
+    }
+
+    .textorodape {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .copyrightrodape {
+        margin-left: -30px;
+        margin-top: 10px;
+        background-color: #FFC4D1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .textocopyrightrodape {
+        color: #585858;
+
+    }
+}
+
+/* CSS DESKTOP */
+
+@media (min-width: 1024px) {
+
+    .mobile {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbardesktop {
+        background-color: #FFC4D1;
+        display: block;
+        padding: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+
+    .navbardesktopitem {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .navbardesktopitens {
+        font-size: 2.22vw;
+        text-decoration: none;
+        font-weight: 350;
+        color: #6B717E;
+        transition: color 0.2s linear;
+        transition: box-shadow 0.2s linear;
+    }
+
+    .navbardesktopitens:hover {
+        color: #D81E5B;
+        box-shadow: 0 3px 0 #D81E5B;
+    }
+
+    .navbardesktoplogo {
+        height: 40px;
+    }
+
+    .bannerdesktop {
+        width: 100vw;
+        height: calc(100vh - 2.22vw - 20px);
+        background-size: cover;
+        text-align: center;
+        padding-top: 20vh;
+    }
+
+    .bannerlinha {
+        border: 2px solid #D81E5B;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1.0;
+    }
+
+    .textobanner {
+        white-space: nowrap;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .botaobanner {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+        height: 80px;
+        background-color: #FF5C8E;
+        border-radius: 25px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 75px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .botaobanner:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    .cardsnovidades {
+        justify-content: space-around;
+        display: grid;
+        gap: auto;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .cardnovidades {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        width: 160px;
+        height: 300px;
+        border-radius: 10px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        word-wrap: break-word;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+        overflow: hidden;
+    }
+
+    .imagemnovidades {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .linhanovidades {
+        width: 140px;
+        height: 5px;
+        color: #D81E5B;
+        background-color: #D81E5B;
+        margin: 0 auto;
+    }
+
+    .titulosessaonovidades {
+        font-size: 41.89px;
+        font-weight: 500;
+        text-align: center;
+        color: #D81E5B;
+        margin-top: 20px;
+    }
+
+    .titulocardsnovidades {
+        font-weight: 600;
+        font-size: 25.89px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .textocardsnovidades {
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .botaocardnovidades {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        height: 40px;
+        background-color: #FF5C8E;
+        border-radius: 10px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        width: 125px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .botaocardnovidades:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    .sessaonossosprodutos {
+        margin-top: 20px;
+        background-color: #ffffff;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .titulonossosprodutos {
+        font-size: 41.89px;
+        color: #D81E5B;
+        font-weight: 500;
+    }
+
+    .itensnossosprodutos {
+        justify-content: space-around;
+        display: grid;
+        gap: auto;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto auto;
+        max-width: 300px;
+    }
+
+    .seletornossosprodutos {
+        font-size: 25.89px;
+        text-decoration: none;
+        color: #6B717E;
+        cursor: pointer;
+        font-weight: 500;
+        transition: color 0.2s linear;
+        transition: box-shadow 0.2s linear;
+    }
+
+    .seletornossosprodutos:hover {
+        color: #585858 !important;
+        box-shadow: 0 3px 0 #585858;
+    }
+
+    .titulocardsnossosprodutos {
+        font-weight: 500;
+        font-size: 25.89px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: #6B717E;
+    }
+
+    .textocardsnossosprodutos {
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: #6B717E;
+    }
+
+    #seletornossosprodutos1 {
+        color: #585858;
+        box-shadow: 0 3px 0 #585858;
+    }
+
+    .cardnossosprodutos {
+        margin-top: 10px;
+    }
+
+    .cardsnossosprodutos1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .cardsnossosprodutos2 {
+        display: none;
+        grid-template-columns: auto auto auto;
+    }
+
+    .cardsnossosprodutos3 {
+        display: none;
+        grid-template-columns: auto auto auto;
+    }
+
+    .cardsnossosprodutos4 {
+        display: none;
+        grid-template-columns: auto auto auto;
+    }
+
+    .botaovermais {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+        margin-top: 20px;
+        height: 80px;
+        background-color: #FF5C8E;
+        border-radius: 25px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 75px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
+    }
+
+
+    .botaovermais:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    .caixamaisinformacoes {
+        background-color: #FFE8E1;
+        width: 393px;
+        height: 312px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .sessaomaisinformacoes {
+        margin-top: 30px;
+        padding-left: 30px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+
+    .titulomaisinformacoes {
+        font-size: 25.89px;
+        color: black;
+        font-weight: 500;
+    }
+
+    .textomaisinformacoes {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 450;
+    }
+
+    iframe {
+        width: 530px;
+        height: 310px;
+        border: solid #D81E5B 3px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .botaogps {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+        height: 80px;
+        background-color: #FF5C8E;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 75px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .botaogps:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    .rodape {
+        background-color: #FF5C8E;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* grid-template-areas: "departamento departamento departamento" "copyright copyright copyright"; */
+        justify-content: space-around;
+    }
+
+    .departamentosrodape {
+        /* grid-area: departamento; */
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .titulorodape {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 25.89px;
+    }
+
+    .textorodape {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .copyrightrodape {
+        grid-area: copyright;
+        margin-left: -30px;
+        margin-top: 10px;
+        background-color: #FFC4D1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .textocopyrightrodape {
+        color: #585858;
+
+    }
+
+}
+
+/* CSS TABLET */
+
+@media (min-width: 480px) and (max-width:1023px) {
+
+    .mobile {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbardesktop {
+        background-color: #FFC4D1;
+        display: block;
+        padding: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+
+    .navbardesktopitem {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .navbardesktopitens {
+        font-size: 2.22vw;
+        text-decoration: none;
+        font-weight: 350;
+        color: #6B717E;
+        transition: color 0.2s linear;
+        transition: box-shadow 0.2s linear;
+    }
+
+    .navbardesktopitens:hover {
+        color: #D81E5B;
+        box-shadow: 0 3px 0 #D81E5B;
+    }
+
+    .navbardesktoplogo {
+        height: 40px;
+    }
+
+    .bannerdesktop {
+        width: 100vw;
+        height: calc(100vh - 2.22vw - 20px);
+        background-size: cover;
+        text-align: center;
+        padding-top: 20vh;
+    }
+
+    .bannerlinha {
+        border: 2px solid #D81E5B;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1.0;
+    }
+
+    .textobanner {
+        white-space: nowrap;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .botaobanner {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+        height: 80px;
+        background-color: #FF5C8E;
+        border-radius: 25px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 75px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .botaobanner:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    @media(min-width: 701px) {
+        .cardsnovidades {
+            justify-content: space-around;
+            display: grid;
+            gap: auto;
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+
+    @media(max-width: 700px) {
+        .cardsnovidades {
+            justify-content: space-evenly;
+            display: grid;
+            gap: auto;
+            grid-template-columns: auto auto;
+        }
+    }
+
+    .cardnovidades {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        width: 160px;
+        height: 300px;
+        border-radius: 10px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        word-wrap: break-word;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+        overflow: hidden;
+    }
+
+    .imagemnovidades {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .linhanovidades {
+        width: 140px;
+        height: 5px;
+        color: #D81E5B;
+        background-color: #D81E5B;
+        margin: 0 auto;
+    }
+
+    .titulosessaonovidades {
+        font-size: 41.89px;
+        font-weight: 500;
+        text-align: center;
+        color: #D81E5B;
+        margin-top: 20px;
+    }
+
+    .titulocardsnovidades {
+        font-weight: 600;
+        font-size: 25.89px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .textocardsnovidades {
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .botaocardnovidades {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        height: 40px;
+        background-color: #FF5C8E;
+        border-radius: 10px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        width: 125px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .botaocardnovidades:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    .sessaonossosprodutos {
+        margin-top: 20px;
+        background-color: #ffffff;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .titulonossosprodutos {
+        font-size: 41.89px;
+        color: #D81E5B;
+        font-weight: 500;
+    }
+
+    .itensnossosprodutos {
+        justify-content: space-around;
+        display: grid;
+        gap: auto;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto auto;
+        max-width: 300px;
+    }
+
+    @media (min-width: 980px) {
+
+        .cardsnossosprodutos1 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .cardsnossosprodutos2 {
+            display: none;
+            grid-template-columns: auto auto auto;
+        }
+
+        .cardsnossosprodutos3 {
+            display: none;
+            grid-template-columns: auto auto auto;
+        }
+
+        .cardsnossosprodutos4 {
+            display: none;
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    @media (min-width: 660px) and (max-width: 979px) {
+
+        .cardsnossosprodutos1 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .cardsnossosprodutos2 {
+            display: none;
+            grid-template-columns: auto auto;
+        }
+
+        .cardsnossosprodutos3 {
+            display: none;
+            grid-template-columns: auto auto;
+        }
+
+        .cardsnossosprodutos4 {
+            display: none;
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media(max-width: 659px) {
+
+        .cardsnossosprodutos1 {
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        .cardsnossosprodutos2 {
+            display: none;
+            grid-template-columns: auto;
+        }
+
+        .cardsnossosprodutos3 {
+            display: none;
+            grid-template-columns: auto;
+        }
+
+        .cardsnossosprodutos4 {
+            display: none;
+            grid-template-columns: auto;
+        }
+    }
+
+    .seletornossosprodutos {
+        font-size: 25.89px;
+        text-decoration: none;
+        color: #6B717E;
+        cursor: pointer;
+        font-weight: 500;
+        transition: color 0.2s linear;
+        transition: box-shadow 0.2s linear;
+    }
+
+    .seletornossosprodutos:hover {
+        color: #585858 !important;
+        box-shadow: 0 3px 0 #585858;
+    }
+
+    .titulocardsnossosprodutos {
+        font-weight: 500;
+        font-size: 25.89px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: #6B717E;
+    }
+
+    .textocardsnossosprodutos {
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: #6B717E;
+    }
+
+    #seletornossosprodutos1 {
+        color: #585858;
+        box-shadow: 0 3px 0 #585858;
+    }
+
+    .cardnossosprodutos {
+        margin-top: 10px;
+    }
+
+    .botaovermais {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+        margin-top: 20px;
+        height: 80px;
+        background-color: #FF5C8E;
+        border-radius: 25px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 75px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
+    }
+
+
+    .botaovermais:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    .caixamaisinformacoes {
+        background-color: #FFE8E1;
+        width: 393px;
+        height: 312px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    @media (min-width: 480px) and (max-width:960px) {
+        .sessaomaisinformacoes {
+            background-color: #FFE8E1;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        .titulomaisinformacoes {
+            font-size: 25.89px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .textomaisinformacoes {
+            margin-left: 10vw;
+            font-size: 16px;
+            font-weight: 450;
+        }
+
+        iframe {
+            width: 80vw;
+            height: 180px;
+            border: solid #D81E5B 3px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+        
+    }
+
+
+    @media (min-width: 480px) and (max-width:800px) {
+        .rodape {
+            background-color: #FF5C8E;
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: grid;
+            grid-template-columns: auto;
+            /* grid-template-areas: "departamento departamento departamento" "copyright copyright copyright"; */
+        }
+
+        .departamentosrodape {
+            grid-template-rows: auto auto auto auto auto;
+        }
+    
+        .titulorodape {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 25.89px;
+        }
+    
+        .textorodape {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    
+        .copyrightrodape {
+            margin-left: -30px;
+            margin-top: 10px;
+            background-color: #FFC4D1;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 801px) and (max-width:1024px) {
+        .rodape {
+            background-color: #FF5C8E;
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-areas: "departamento departamento departamento" "copyright copyright copyright"; */
+            justify-content: space-around;
+        }
+
+        .titulorodape {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 25.89px;
+        }
+    
+        .textorodape {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    
+        .copyrightrodape {
+            grid-area: copyright;
+            margin-left: -30px;
+            margin-top: 10px;
+            background-color: #FFC4D1;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+
+    @media (min-width: 961px) and (max-width:1024px) {
+        .sessaomaisinformacoes {
+            margin-top: 30px;
+            padding-left: 30px;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            width: 530px;
+            height: 310px;
+            border: solid #D81E5B 3px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .departamentosrodape {
+            /* grid-area: departamento; */
+            grid-template-columns: auto auto auto auto auto;
+        }
+    
+    }
+
+    .titulomaisinformacoes {
+        font-size: 25.89px;
+        color: black;
+        font-weight: 500;
+    }
+
+    .textomaisinformacoes {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 450;
+    }
+
+
+    .botaogps {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+        height: 80px;
+        background-color: #FF5C8E;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        font-weight: 600;
+        outline: none;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        touch-action: manipulation;
+        will-change: transform;
+        line-height: 75px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    }
+
+    .botaogps:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    
+
+    
+
+    .textocopyrightrodape {
+        color: #585858;
+
+    }
+
+}
