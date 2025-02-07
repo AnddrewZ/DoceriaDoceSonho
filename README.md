@@ -1,1 +1,1 @@
-# DoceriaDoceSonho
+Hello 👋! Welcome to my first project of 2025, it is a bakery(?) website, I hope you find it good and I would absolutely love any feedback you may have (contact me on ata.uandrews@gmail.com :D). Thank you for checking it!
